@@ -1,0 +1,39 @@
+body
+{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    
+    
+    
+}
+button
+{
+    /* background:none; */
+    font-size:x-large;
+    margin-bottom: 20%;
+    background-color: rgb(186, 105, 46);
+    margin: 7%;
+
+}   
+
+
+.listi {
+    list-style-type: none; /* Remove bullets */
+    font-size: x-large;
+    margin: 7%;
+
+    
+    /* padding: 0; 
+    margin: 0; */
+  }
