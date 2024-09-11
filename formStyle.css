@@ -1,7 +1,7 @@
 body{
     background-color: rgb(230, 225, 219);
     font-family: 'Lucida Sans';
-    background-image: url("solcito.jpg");
+    background-image: url("bricks.jpg");
     background-size: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -49,6 +49,7 @@ input{
     margin-left:15%;
     margin-right: 15%;
     margin-bottom: 3%;
+    
     
 }
 
@@ -117,6 +118,7 @@ span
     flex-direction: row;
     align-content: center;
     align-items: center;
+    
 }
 
 table
@@ -136,5 +138,5 @@ table
 {
     display: flex;
     flex-direction: column;
-    
+    font: bold;
 }
