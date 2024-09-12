@@ -1,6 +1,7 @@
 
 
 var studentsList = [];
+const studentsListCont = document.getElementById("studentsListCont");
 
 function addStudent(studentsList)
 {
@@ -121,18 +122,30 @@ document.getElementById("menu").addEventListener("click",  function(event){
 
 
     });
+})
+
+document.getElementById("caliStudent").addEventListener("click", function(event){
+    document.getElementById('addStudent').classList.add('hided')
+    document.getElementById('caliStudent').classList.add('hided')
+    event.preventDefault();
+    studentsList.forEach(item => {
 
 
+        const buttiton = document.createElement("button");
+        buttiton.textContent(item[1]);
+        buttiton.className = "listButtons";
+        studentsListCont.appendChild(buttiton);
 
-
-});
-
+    })
+})
+        
 
 
 
 document.getElementById("show").addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById("firstDiv").classList.add('hided');
+    console.log("Hola entre? ")
     const table = document.createElement("table");
     table.className = 'styled-table';
 
